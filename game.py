@@ -8,7 +8,9 @@ def run_game():
     clock = pygame.time.Clock()
     running = True
     while running:
-        clock.tick(FPS)
+        delta_time = clock.tick(FPS) / 1000
+# Temporary check — remove after testing: 
+        print(round(delta_time, 3))
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
