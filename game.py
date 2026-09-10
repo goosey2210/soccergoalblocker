@@ -14,6 +14,6 @@ def run_game():
                 running = False
         screen.fill(NAVY)
         pygame.display.flip()
-     pygame.quit()
+    pygame.quit()
 if __name__ == "__main__":
- run_game()
+    run_game()
